@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@drawable/bgnature"
     tools:context=".MainActivity">
 
     <TextView
@@ -19,24 +20,24 @@
 
     <RelativeLayout
         android:id="@+id/relative_root"
-        android:layout_width="319dp"
-        android:layout_height="495dp"
-        android:background="@drawable/bgmain"
+        android:layout_width="321dp"
+        android:layout_height="440dp"
+        android:background="@drawable/ramka4"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.277">
+        app:layout_constraintVertical_bias="0.325">
 
         <TextView
             android:layout_width="40dp"
             android:layout_height="70dp"
             android:layout_alignParentTop="true"
             android:layout_alignParentEnd="true"
-            android:layout_marginTop="421dp"
-            android:layout_marginEnd="275dp"
-            android:visibility="gone"
-            android:background="@drawable/bubble4" />
+            android:layout_marginTop="318dp"
+            android:layout_marginEnd="257dp"
+            android:background="@drawable/bubble4"
+            android:visibility="visible" />
     </RelativeLayout>
 
     <Button
@@ -47,19 +48,47 @@
         android:text="Start game"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintHorizontal_bias="0.056"
         app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/btn_1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="40dp"
+        android:layout_marginBottom="16dp"
+        android:text="speed 1"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/btn_start" />
+
+    <Button
+        android:id="@+id/btn_2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginBottom="16dp"
+        android:text="speed 2"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/btn_1" />
 
     <TextView
         android:id="@+id/text_end_game"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:textSize="40dp"
+        android:shadowColor="@color/text_shadow"
+        android:shadowDx="1"
+        android:shadowDy="1"
+        android:shadowRadius="2"
         android:text="Game Over"
-        android:visibility="gone"
-        app:layout_constraintEnd_toEndOf="parent"
+        android:textColor="#E1E0E0"
+        android:textSize="40dp"
+        android:textStyle="bold"
+        android:visibility="visible"
         app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.41000003" />
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>

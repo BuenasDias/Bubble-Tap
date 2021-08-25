@@ -78,7 +78,7 @@ public class MainActivity extends AppCompatActivity {
     private int generateMarginEnd(){
         Random random = new Random();
         float scale = this.getResources().getDisplayMetrics().density;
-        return (int) (random.nextInt(275) * scale + 0.5f);
+        return (int) ((random.nextInt(237) + 21) * scale + 0.5f);
     }
 
     private int getDP(int pixel){
@@ -89,6 +89,6 @@ public class MainActivity extends AppCompatActivity {
     private int generateMarginTop(){
         Random random = new Random();
         float scale = this.getResources().getDisplayMetrics().density;
-        return (int) (random.nextInt(421) * scale + 0.5f);
+        return (int) ((random.nextInt(326) + 21) * scale + 0.5f);
     }
 }
